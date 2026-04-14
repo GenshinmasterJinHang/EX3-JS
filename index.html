@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Punch Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Guess Character in One Punch Man</h1>
+        <p class="instruction">Try to guess the character name!</p>
+
+        <h2 id="scrambled-word">Loading...</h2>
+
+        <input type="text" id="guess" placeholder="Enter your guess here">
+
+        <div class="button-row">
+            <button id="check-button" type="button">Check Answer</button>
+            <button id="new-button" type="button">New Word</button>
+        </div>
+
+        <p id="counter">Wrong guesses: 0 / 10</p>
+        <p id="result"></p>
+
+        <img id="word-image" src="" alt="Character Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
