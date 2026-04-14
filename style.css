@@ -54,12 +54,21 @@ h1 {
     font-size: 16px;
     background-color: #fffdf5;
     color: #7a1f1f;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#guess:hover {
+    border-color: #f9a825;
+    box-shadow: 0 4px 12px rgba(120, 0, 0, 0.15);
+    transform: translateY(-1px);
 }
 
 #guess:focus {
     border: 2px solid #f9a825;
     outline: none;
     background-color: #fff8e1;
+    box-shadow: 0 5px 14px rgba(120, 0, 0, 0.2);
+    transform: translateY(-1px);
 }
 
 .button-row {
@@ -78,11 +87,18 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 button:hover {
     background-color: #ffd54f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(120, 0, 0, 0.24);
+}
+
+button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 8px rgba(120, 0, 0, 0.2);
 }
 
 #counter {
@@ -111,4 +127,10 @@ button:hover {
     padding: 8px;
     background-color: #fff8e1;
     box-shadow: 0 3px 10px rgba(120, 0, 0, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#word-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(120, 0, 0, 0.32);
 }
